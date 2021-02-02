@@ -4,7 +4,7 @@ let path = require('path')
 let { spawn } = require('child_process')
 let handler = async (m, { conn, args }) => {
   if (args.length < 2) return m.reply('Tidak ada teks nya')
-  conn.sendFile(m.chat, await tts(args[0], args.slice(1).join(' ')).catch(err => m.reply(err + '')), 'tts.opus', null, m, true)
+  conn.sendFile(m.chat, await tts(args[0], args.slice(1).join(' ')).catch(err => m.reply(err + '')), 'tts.opus', ml, en, null, m, true)
 }
 handler.help = ['tts <lang> <teks>']
 handler.tags = ['tools']
