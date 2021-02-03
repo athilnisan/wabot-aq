@@ -4,14 +4,14 @@ let path = require('path')
 let { spawn } = require('child_process')
 let handler = async (m, { conn, args }) => {
   if (args.length < 2) return m.reply('Tidak ada teks nya')
-  conn.sendFile(m.chat, await tts(args[0], args.slice(1).join(' ')).catch(err => m.reply(err + '')), 'tts.opus', ml, en, null, m, true)
+  conn.sendFile(m.chat, await tts(args[0], args.slice(1).join(' ')).catch(err => m.reply(err + '')), 'tts.opus', null, m, true)
 }
 handler.help = ['tts <lang> <teks>']
 handler.tags = ['tools']
 handler.command = /^g?tts$/i
 module.exports = handler
 
-function tts(lang,ml,en,es,az,in, text) {
+function tts(lang, text) {
   return new Promise((resolve, reject) => {
     try {
       let tts = gtts(lang)
