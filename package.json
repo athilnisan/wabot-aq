@@ -1,7 +1,7 @@
 {
-  "name": "wabot-aq",
+  "name": "DORA MONE",
   "version": "1.2.8",
-  "description": "Customizable WhatsApp Bot",
+  "description": "Modified Bot Free to use",
   "depecrated": false,
   "main": "index.js",
   "directories": {
@@ -21,7 +21,7 @@
   ],
   "homepage": "https://github.com/Nurutomo/wabot-aq",
   "author": {
-    "name": "Nurutomo"
+    "name": " NISSAN "
   },
   "repository": {
     "url": "https://github.com/Nurutomo/wabot-aq.git"
